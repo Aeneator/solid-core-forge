@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/solid-core-forge/static/css/main.21f9a216.css",
-    "main.js": "/solid-core-forge/static/js/main.31370ce7.js",
+    "main.css": "/solid-core-forge/static/css/main.95cea27b.css",
+    "main.js": "/solid-core-forge/static/js/main.da19437a.js",
     "static/js/488.5faf635b.chunk.js": "/solid-core-forge/static/js/488.5faf635b.chunk.js",
     "static/media/home-background.jpg": "/solid-core-forge/static/media/home-background.336baa62e33cad535715.jpg",
     "static/media/underheader.jpg": "/solid-core-forge/static/media/underheader.d5c112129bb02fa4cdfe.jpg",
+    "static/media/creality-ender-3-max-neo.png": "/solid-core-forge/static/media/creality-ender-3-max-neo.96fe0996e6ac8abfa0e8.png",
     "static/media/logo.png": "/solid-core-forge/static/media/logo.5a8e1ce964c1a081c4e1.png",
     "index.html": "/solid-core-forge/index.html",
-    "main.21f9a216.css.map": "/solid-core-forge/static/css/main.21f9a216.css.map",
-    "main.31370ce7.js.map": "/solid-core-forge/static/js/main.31370ce7.js.map",
+    "main.95cea27b.css.map": "/solid-core-forge/static/css/main.95cea27b.css.map",
+    "main.da19437a.js.map": "/solid-core-forge/static/js/main.da19437a.js.map",
     "488.5faf635b.chunk.js.map": "/solid-core-forge/static/js/488.5faf635b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21f9a216.css",
-    "static/js/main.31370ce7.js"
+    "static/css/main.95cea27b.css",
+    "static/js/main.da19437a.js"
   ]
 }
