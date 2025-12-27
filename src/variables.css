@@ -1,0 +1,34 @@
+/* variables.css */
+:root {
+  --color-background: #ececec;
+  /* --color-background: #222222; */
+  --color-text-white: #ffffff;
+  --color-text-black: #222222;
+  --color-card: #f0f0f0;
+  --color-primary: #ff6e00;
+  --color-footer: #2c2c2c;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  /* extra small */
+  --font-size-sm: 0.875rem;
+  /* small */
+  --font-size-md: 1rem;
+  /* medium / base */
+  --font-size-lg: 1.125rem;
+  /* large */
+  --font-size-xl: 1.25rem;
+  /* extra large */
+  --font-size-2xl: 1.5rem;
+  /* 2x large */
+  --font-size-3xl: 2rem;
+  /* 3x large */
+  --font-size-4xl: 2.5rem;
+  /* 4x large */
+}
+
+[data-theme="dark"] {
+  --color-background: #222222;
+
+
+}

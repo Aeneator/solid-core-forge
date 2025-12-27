@@ -1,0 +1,88 @@
+@import '../variables.css';
+/* make sure CSS variables are available */
+
+/* Full page wrapper */
+.programPage {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    min-height: 100vh;
+}
+
+/* Hero/banner at top */
+.hero {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* overlay */
+}
+
+.heroTitle {
+    position: relative;
+    color: var(--color-text);
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Program list container */
+.programContainer {
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color: var(--color-card);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Each day row */
+.day {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: var(--font-size-xl);
+    color: var(--color-text);
+}
+
+.day:last-child {
+    border-bottom: none;
+}
+
+.dayName {
+    font-weight: 600;
+}
+
+.dayHours {
+    color: var(--color-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .heroTitle {
+        font-size: var(--font-size-3xl);
+    }
+
+    .programContainer {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .day {
+        font-size: var(--font-size-lg);
+    }
+}

@@ -1,0 +1,48 @@
+/* Home.module.css */
+
+.homePage {
+  height: 100vh;
+  /* full viewport height */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-text-white);
+  position: relative;
+  ;
+}
+
+/* Optional overlay */
+.homePage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.homeContent {
+  position: relative;
+  z-index: 1;
+}
+
+.homeContent h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+.homeContent p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.spacer {
+  height: 500px;
+}

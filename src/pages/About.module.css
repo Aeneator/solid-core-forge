@@ -1,0 +1,25 @@
+.aboutPage {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    min-height: 100vh;
+}
+
+.aboutContent {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.aboutContent h2 {
+    font-size: var(--font-size-2xl, 1.5rem);
+    margin-bottom: 0.5rem;
+    color: var(--color-primary, #ff6e00);
+}
+
+.aboutContent p {
+    font-size: var(--font-size-md, 1rem);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-black, #222);
+}

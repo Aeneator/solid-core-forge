@@ -1,0 +1,33 @@
+.testimonialsSection {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.testimonialsSection h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonialCard {
+    background-color: var(--color-background, #f5f5f5);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    margin: 0 0.5rem;
+}
+
+.testimonialCard .text {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonialCard .name {
+    font-weight: bold;
+    text-align: right;
+}
