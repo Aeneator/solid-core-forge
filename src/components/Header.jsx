@@ -7,10 +7,6 @@ import logo from "../assets/logo.png";
 const NAV_LINKS = [
   { name: "Acasa", path: "/" },
   { name: "Despre Noi", path: "/about" },
-  { name: "Program", path: "/program" },
-  { name: "Servicii", path: "/services" },
-  { name: "Galerie", path: "/gallery" },
-  { name: "Contact", path: "/contact" },
 ];
 
 export default function Header() {
