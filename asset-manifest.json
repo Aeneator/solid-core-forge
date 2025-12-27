@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/solid-core-forge/static/css/main.21f9a216.css",
-    "main.js": "/solid-core-forge/static/js/main.b7d86e1d.js",
+    "main.js": "/solid-core-forge/static/js/main.3a67e5d6.js",
     "static/js/488.5faf635b.chunk.js": "/solid-core-forge/static/js/488.5faf635b.chunk.js",
     "static/media/home-background.jpg": "/solid-core-forge/static/media/home-background.336baa62e33cad535715.jpg",
     "static/media/underheader.jpg": "/solid-core-forge/static/media/underheader.d5c112129bb02fa4cdfe.jpg",
     "static/media/logo.png": "/solid-core-forge/static/media/logo.5a8e1ce964c1a081c4e1.png",
     "index.html": "/solid-core-forge/index.html",
     "main.21f9a216.css.map": "/solid-core-forge/static/css/main.21f9a216.css.map",
-    "main.b7d86e1d.js.map": "/solid-core-forge/static/js/main.b7d86e1d.js.map",
+    "main.3a67e5d6.js.map": "/solid-core-forge/static/js/main.3a67e5d6.js.map",
     "488.5faf635b.chunk.js.map": "/solid-core-forge/static/js/488.5faf635b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21f9a216.css",
-    "static/js/main.b7d86e1d.js"
+    "static/js/main.3a67e5d6.js"
   ]
 }
