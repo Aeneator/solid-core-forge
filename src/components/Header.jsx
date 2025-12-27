@@ -2,11 +2,13 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import styles from "./Header.module.css";
 import NavLink from "./NavLink";
-import logo from "../assets/logo.png";
+import logo from "../assets/solid-core-forge-logo.png";
 
 const NAV_LINKS = [
-  { name: "Acasa", path: "/" },
-  { name: "Despre Noi", path: "/about" },
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "3D Printer", path: "/printer-info" },
+  { name: "Models", path: "/models" },
 ];
 
 export default function Header() {

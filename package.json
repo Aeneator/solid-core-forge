@@ -4,10 +4,12 @@
   "private": true,
   "homepage": "https://aeneator.github.io/solid-core-forge",
   "dependencies": {
+    "@google/model-viewer": "^4.1.0",
     "lucide-react": "^0.562.0",
     "react": "18.2.0",
     "react-alice-carousel": "^2.9.1",
     "react-dom": "18.2.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "6.8.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^5.1.0"

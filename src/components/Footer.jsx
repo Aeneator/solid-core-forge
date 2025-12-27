@@ -1,6 +1,6 @@
-import { MapPin, CalendarCheck, Phone, Facebook, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 import styles from './Footer.module.css';
-import logo from '../assets/logo.png'; // your logo image
+import logo from '../assets/solid-core-forge-logo.png'; // your logo image
 
 export default function Footer() {
     // Use an international format for the phone URI
@@ -19,27 +19,9 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
-                <div className={styles.section}>
-                    <MapPin size={28} className={styles.icon} />
-                    <p>Strada Almaș nr 18<br />Bucuresti Romania</p>
-                </div>
 
-                <div className={styles.section}>
-                    <CalendarCheck size={28} className={styles.icon} />
-                    <p>Book Appointment</p>
-                </div>
 
-                <div className={styles.section}>
-                    <a
-                        href={`tel:${phoneNumberTel}`}
-                        aria-label={`Call ${phoneNumberDisplay}`}
-                        title={`Call ${phoneNumberDisplay}`}
-                        className={styles.socialIcon} // use the same class as other social icons
-                    >
-                        <Phone size={28} />
-                        <p className={styles.phoneText}>{phoneNumberDisplay}</p>
-                    </a>
-                </div>
+
             </div>
             {/* Bottom row */}
             <div className={styles.bottomRow}>
@@ -52,15 +34,11 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.right}>
-                    <a href="https://www.facebook.com/SpaStudiobyKaty?locale=ro_RO" target="_blank" rel="noopener noreferrer">
-                        <Facebook size={24} className={styles.socialIcon} />
-                    </a>
-                    <a href="https://www.instagram.com/spastudiobykaty/" target="_blank" rel="noopener noreferrer">
+
+                    <a href="https://www.instagram.com/explore/search/keyword/?q=%233dprint" target="_blank" rel="noopener noreferrer">
                         <Instagram size={24} className={styles.socialIcon} />
                     </a>
-                    <a href="https://maps.app.goo.gl/oHrCFjXHKt2fers3A" target="_blank" rel="noopener noreferrer">
-                        <MapPin size={24} className={styles.socialIcon} />
-                    </a>
+
                 </div>
             </div>
         </footer>

@@ -1,25 +1,98 @@
+/* About.module.css */
 .aboutPage {
-    font-family: Arial, sans-serif;
     background-color: var(--color-background);
     min-height: 100vh;
+    padding-bottom: 2rem;
 }
 
 .aboutContent {
     max-width: 800px;
     margin: 2rem auto;
-    padding: 0 1rem;
-    text-align: center;
+    padding: 0 1.5rem;
 }
 
 .aboutContent h2 {
-    font-size: var(--font-size-2xl, 1.5rem);
-    margin-bottom: 0.5rem;
-    color: var(--color-primary, #ff6e00);
+    font-size: var(--font-size-3xl);
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    text-align: center;
+    font-weight: 600;
 }
 
-.aboutContent p {
-    font-size: var(--font-size-md, 1rem);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: var(--color-text-black, #222);
+.aboutSection {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: var(--color-card);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aboutSection:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.aboutSection h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.aboutSection p {
+    font-size: var(--font-size-md);
+    line-height: 1.7;
+    color: var(--color-text-black);
+    margin: 0;
+}
+
+/* Dark mode specific adjustments */
+[data-theme="dark"] .aboutSection {
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .aboutSection:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .aboutSection p {
+    color: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .aboutContent {
+        margin: 1rem auto;
+        padding: 0 1rem;
+    }
+
+    .aboutContent h2 {
+        font-size: var(--font-size-2xl);
+        margin-bottom: 1.5rem;
+    }
+
+    .aboutSection {
+        padding: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .aboutSection h3 {
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutContent {
+        padding: 0 0.75rem;
+    }
+
+    .aboutSection {
+        padding: 1rem;
+    }
+
+    .aboutSection p {
+        font-size: var(--font-size-sm);
+    }
 }

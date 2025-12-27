@@ -10,12 +10,12 @@ export default function Home() {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className={styles.homeContent}>
-          <h1>Welcome to Home Page!!!</h1>
-          <p>Your tagline or description goes here</p>
+          <h1>Bring your ideas to life</h1>
+          <p>Create anything</p>
         </div>
 
       </div>
-      <Testimonials />
+
       <div className={styles.spacer}></div>
     </div>
   );

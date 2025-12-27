@@ -1,0 +1,164 @@
+import { useState, useRef } from 'react'; // Add useRef
+import Banner from '../components/Banner';
+import '@google/model-viewer'; // Import the web component
+import styles from './Models.module.css';
+
+import caesar from '../assets/models/caesar.glb';
+import caesarThumbnail from '../assets/models/caesar.jpg';
+import whaleShark from '../assets/models/ArticulatedWhaleShark.glb';
+import whaleSharkThumbnail from '../assets/models/caesar.jpg';
+
+const exampleModels = [
+    {
+        id: 1,
+        name: "Caesar Bust",
+        modelUrl: caesar,
+        thumbnail: caesarThumbnail,
+        backgroundColor: "#ffffffff",
+        cameraOrbit: "45deg 55deg 4m",
+        cameraTarget: "0m 0.5m 0m",
+    },
+    {
+        id: 2,
+        name: "Whale Shark",
+        modelUrl: whaleShark,
+        thumbnail: whaleSharkThumbnail,
+        backgroundColor: "#ffffffff",
+        cameraOrbit: "45deg 55deg 4m",
+        cameraTarget: "0m 0.5m 0m",
+    },
+];
+
+export default function Models() {
+    const [selectedModel, setSelectedModel] = useState(exampleModels[0]);
+    const viewerRef = useRef(null);
+
+    const handleModelClick = (model) => {
+        setSelectedModel(model);
+
+        // Scroll to the viewer section instead of top of page
+        if (viewerRef.current) {
+            viewerRef.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
+    return (
+        <div className={styles.modelsPage}>
+            <Banner text="3D Models Gallery" />
+
+            <div className={styles.modelsContent}>
+                <div className={styles.introSection}>
+                    <h2>Interactive 3D Models</h2>
+                    <p>
+                        Explore my hand-painted 3D printed creations. Click and drag to rotate, scroll to zoom,
+                        and see the brushwork details up close.
+                    </p>
+                </div>
+
+                {/* Main 3D Viewer */}
+                <div className={styles.viewerSection} ref={viewerRef}>
+                    <div className={styles.viewerContainer}>
+                        <div className={styles.viewerHeader}>
+                            <div className={styles.modelTitle}>
+                                <h3>{selectedModel.name}</h3>
+                            </div>
+
+                            <div className={styles.viewerControls}>
+                                <button
+                                    className={styles.controlBtn}
+                                    onClick={() => document.querySelector('model-viewer')?.resetTurntableRotation()}
+                                    title="Reset view"
+                                >
+                                    ↺ Reset View
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Model Viewer Component */}
+                        <div className={styles.modelViewerWrapper}>
+                            <model-viewer
+                                src={selectedModel.modelUrl}
+                                alt={selectedModel.name}
+                                camera-controls
+                                auto-rotate={true}
+                                // camera-orbit={selectedModel.cameraOrbit}
+                                // camera-target={selectedModel.cameraTarget}
+                                shadow-intensity="1"
+                                rimLightIntensity="0.5"
+                                environment-presets="night"
+                                exposure=".15"
+                                style={{
+                                    width: '100%',
+                                    height: '70vh',
+                                    backgroundColor: selectedModel.backgroundColor,
+                                }}
+                            >
+                            </model-viewer>
+
+                            <div className={styles.viewerInstructions}>
+                                <div className={styles.instructionItem}>
+                                    <span className={styles.instructionIcon}>↔️</span>
+                                    <span>Click & Drag to Rotate</span>
+                                </div>
+                                <div className={styles.instructionItem}>
+                                    <span className={styles.instructionIcon}>↕️</span>
+                                    <span>Scroll to Zoom</span>
+                                </div>
+                                <div className={styles.instructionItem}>
+                                    <span className={styles.instructionIcon}>🖱️</span>
+                                    <span>Right-click to Pan</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                {/* Model Gallery */}
+                <div className={styles.modelsGallery}>
+                    <h3>Browse All Models</h3>
+                    <p className={styles.gallerySubtitle}>
+                        Click any model to view it in the 3D viewer
+                    </p>
+
+                    <div className={styles.galleryGrid}>
+                        {exampleModels.map((model) => (
+                            <div
+                                key={model.id}
+                                className={`${styles.modelCard} ${selectedModel.id === model.id ? styles.selected : ''}`}
+                                onClick={() => handleModelClick(model)}
+                            >
+                                <div className={styles.modelThumbnail}>
+                                    <div className={styles.thumbnailContainer}>
+                                        <img
+                                            src={model.thumbnail || '/images/default-thumb.jpg'}
+                                            alt={model.name}
+                                            className={styles.thumbnailImage}
+                                        />
+                                        <div className={styles.thumbnailOverlay}>
+                                            <span className={styles.view3D}>3D View</span>
+                                        </div>
+                                        {model.painted && (
+                                            <div className={styles.paintedBadge}>
+                                                🎨 Painted
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                                <div className={styles.modelCardContent}>
+                                    <h4>{model.name}</h4>
+
+
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    );
+}

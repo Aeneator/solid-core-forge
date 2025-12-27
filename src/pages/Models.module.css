@@ -1,0 +1,475 @@
+/* Models.module.css */
+.modelsPage {
+    background-color: var(--color-background);
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.modelsContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.introSection {
+    text-align: center;
+    margin: 2rem 0 3rem;
+}
+
+.introSection h2 {
+    font-size: var(--font-size-3xl);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.introSection p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-black);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Viewer Section */
+.viewerSection {
+    margin-bottom: 4rem;
+}
+
+.viewerContainer {
+    background-color: var(--color-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.viewerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modelTitle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modelTitle h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-black);
+    margin: 0;
+}
+
+.statusBadge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+.statusBadge.painted {
+    background-color: #4caf50;
+    color: white;
+}
+
+.statusBadge.unpainted {
+    background-color: #9e9e9e;
+    color: white;
+}
+
+.viewerControls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.controlBtn {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.controlBtn:hover {
+    background-color: #f5f5f5;
+}
+
+.controlBtn.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+.modelViewerWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.viewerInstructions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.instructionItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-black);
+}
+
+.instructionIcon {
+    font-size: 1rem;
+}
+
+.arButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+}
+
+.arButton:hover {
+    background-color: #c41e15;
+}
+
+.modelInfo {
+    padding: 2rem;
+}
+
+.modelInfo p {
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+    color: var(--color-text-black);
+    margin-bottom: 2rem;
+}
+
+.additionalInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.infoSection h4 {
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.infoSection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.infoSection li {
+    padding: 0.25rem 0;
+    color: var(--color-text-black);
+    font-size: var(--font-size-sm);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.infoSection li:before {
+    content: "•";
+    color: var(--color-primary);
+    position: absolute;
+    left: 0;
+}
+
+/* Gallery Section */
+.modelsGallery {
+    margin-top: 4rem;
+}
+
+.modelsGallery h3 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.gallerySubtitle {
+    text-align: center;
+    color: var(--color-text-black);
+    margin-bottom: 2rem;
+    font-size: var(--font-size-md);
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.modelCard {
+    background-color: var(--color-card);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.modelCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-primary);
+}
+
+.modelCard.selected {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(221, 33, 23, 0.2);
+}
+
+.modelThumbnail {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.thumbnailContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnailImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.modelCard:hover .thumbnailImage {
+    transform: scale(1.05);
+}
+
+.thumbnailOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(221, 33, 23, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modelCard:hover .thumbnailOverlay {
+    opacity: 1;
+}
+
+.view3D {
+    color: white;
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+}
+
+.paintedBadge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+}
+
+.modelCardContent {
+    padding: 1.5rem;
+}
+
+.modelCardContent h4 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-black);
+    margin: 0 0 0.75rem 0;
+}
+
+.modelDescription {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-black);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.modelMeta {
+    display: flex;
+    gap: 1rem;
+    font-size: var(--font-size-xs);
+    color: #666;
+}
+
+/* Features Section */
+.featuresSection {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.featuresSection h3 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.featureCard {
+    padding: 2rem;
+    background-color: var(--color-card);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-5px);
+}
+
+.featureIcon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.featureCard h4 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-black);
+    margin-bottom: 0.75rem;
+}
+
+.featureCard p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-black);
+    line-height: 1.5;
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] .viewerContainer,
+[data-theme="dark"] .modelCard,
+[data-theme="dark"] .featureCard {
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .viewerHeader {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .modelTitle h3,
+[data-theme="dark"] .modelCardContent h4,
+[data-theme="dark"] .featureCard h4 {
+    color: #f0f0f0;
+}
+
+[data-theme="dark"] .introSection p,
+[data-theme="dark"] .modelInfo p,
+[data-theme="dark"] .modelDescription,
+[data-theme="dark"] .featureCard p {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .infoSection li {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .controlBtn {
+    background-color: #333;
+    border-color: #444;
+    color: #f0f0f0;
+}
+
+[data-theme="dark"] .controlBtn:hover {
+    background-color: #444;
+}
+
+[data-theme="dark"] .viewerInstructions {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .instructionItem {
+    color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modelsContent {
+        padding: 0 1rem;
+    }
+
+    .viewerHeader {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .additionalInfo {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .galleryGrid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+
+    model-viewer {
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .introSection h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .introSection p {
+        font-size: var(--font-size-md);
+    }
+
+    .viewerControls {
+        flex-wrap: wrap;
+    }
+
+    .galleryGrid {
+        grid-template-columns: 1fr;
+    }
+
+    model-viewer {
+        height: 350px !important;
+    }
+}
