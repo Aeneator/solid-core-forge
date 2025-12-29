@@ -1,7 +1,5 @@
 import { useRef } from 'react';
 import styles from './Home.module.css';
-import LiquidEther from '../react-bits/LiquidEther';
-import FloatingLines from '../react-bits/FloatingLines';
 import LiquidChrome from '../react-bits/LiquidChrome';
 import VariableProximity from '../react-bits/VariableProximity';
 
@@ -21,9 +19,9 @@ export default function Home() {
         />
 
         <div className={styles.homeContent} ref={containerRef}>
-          {/* <h1>Bring your ideas to life</h1> */}
+
           <VariableProximity
-            label={'Bring your ideas to life'}
+            label={'SOLID CORE FORGE'}
             className={`variable-proximity-demo ${styles.largeText}`}
             fromFontVariationSettings="'wght' 400, 'opsz' 9"
             toFontVariationSettings="'wght' 1000, 'opsz' 40"
@@ -33,7 +31,7 @@ export default function Home() {
           />
           <br />
           <VariableProximity
-            label={'Create anything'}
+            label={'Bring your ideas to life'}
             className={`variable-proximity-demo ${styles.mediumText}`}
             fromFontVariationSettings="'wght' 400, 'opsz' 9"
             toFontVariationSettings="'wght' 1000, 'opsz' 40"
@@ -43,7 +41,6 @@ export default function Home() {
           />
 
         </div>
-        {/* </FloatingLines> */}
       </div>
 
       <div className={styles.spacer}></div>

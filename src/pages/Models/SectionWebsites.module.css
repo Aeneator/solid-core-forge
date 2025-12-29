@@ -1,0 +1,97 @@
+/* Resources Section */
+.resourcesSection {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    /* background: linear-gradient(135deg, #ffffff 0%, #a33636 100%); */
+    background: var(--color-card);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resourcesSubtitle {
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Websites Grid */
+.websitesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.websiteCard {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.websiteCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #4a6cf7;
+}
+
+.websiteIcon {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    align-self: flex-start;
+}
+
+.websiteContent {
+    flex: 1;
+}
+
+.websiteContent h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.websiteContent p {
+    margin: 0 0 1rem 0;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.websiteLink {
+    color: #4a6cf7;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.websiteCard:hover .websiteLink {
+    color: #3050ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .websitesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .resourcesSection {
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .websiteCard {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .websiteIcon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

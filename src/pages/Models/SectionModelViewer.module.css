@@ -1,35 +1,3 @@
-/* Models.module.css */
-.modelsPage {
-    background-color: var(--color-background);
-    min-height: 100vh;
-    padding-bottom: 2rem;
-}
-
-.modelsContent {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.introSection {
-    text-align: center;
-    margin: 2rem 0 3rem;
-}
-
-.introSection h2 {
-    font-size: var(--font-size-3xl);
-    color: var(--color-primary);
-    margin-bottom: 1rem;
-}
-
-.introSection p {
-    font-size: var(--font-size-lg);
-    color: var(--color-text-black);
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
 /* Viewer Section */
 .viewerSection {
     margin-bottom: 4rem;
@@ -316,6 +284,7 @@
     margin-bottom: 1rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

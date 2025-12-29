@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import PrinterInfo from './pages/PrinterInfo';
-import Models from './pages/Models';
+import Models from './pages/Models/Models';
 
 export default function App() {
   return (

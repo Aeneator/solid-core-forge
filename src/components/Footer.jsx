@@ -20,7 +20,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.container}>
 
-
+                <h1>Solid Core Forge</h1>
 
             </div>
             {/* Bottom row */}

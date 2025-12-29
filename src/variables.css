@@ -26,9 +26,3 @@
   --font-size-4xl: 2.5rem;
   /* 4x large */
 }
-
-[data-theme="dark"] {
-  --color-background: #222222;
-
-
-}

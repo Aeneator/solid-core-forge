@@ -4,10 +4,10 @@ import styles from './About.module.css';
 export default function About() {
   return (
     <div className={styles.aboutPage}>
-      <Banner text="About This Project" />
+      <Banner text="Handcrafted 3D Art, Layer by Layer" />
 
       <div className={styles.aboutContent}>
-        <h2>Handcrafted 3D Art, Layer by Layer</h2>
+
 
         <div className={styles.aboutSection}>
           <p>
