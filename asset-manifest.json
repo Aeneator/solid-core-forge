@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/solid-core-forge/static/css/main.77c129da.css",
-    "main.js": "/solid-core-forge/static/js/main.384ce43c.js",
+    "main.css": "/solid-core-forge/static/css/main.97054144.css",
+    "main.js": "/solid-core-forge/static/js/main.544ad9fa.js",
     "static/js/488.911c1cb5.chunk.js": "/solid-core-forge/static/js/488.911c1cb5.chunk.js",
     "static/media/caesar.glb": "/solid-core-forge/static/media/caesar.8ac4437277da56635ef2.glb",
     "static/media/happy-pot.glb": "/solid-core-forge/static/media/happy-pot.f24fc6fcf0536d1733f1.glb",
@@ -14,12 +14,12 @@
     "static/media/whale-shark.jpg": "/solid-core-forge/static/media/whale-shark.e4ed0349e5085646876b.jpg",
     "static/media/low-poly-shark.jpg": "/solid-core-forge/static/media/low-poly-shark.6891e12cddcb2b72ab98.jpg",
     "index.html": "/solid-core-forge/index.html",
-    "main.77c129da.css.map": "/solid-core-forge/static/css/main.77c129da.css.map",
-    "main.384ce43c.js.map": "/solid-core-forge/static/js/main.384ce43c.js.map",
+    "main.97054144.css.map": "/solid-core-forge/static/css/main.97054144.css.map",
+    "main.544ad9fa.js.map": "/solid-core-forge/static/js/main.544ad9fa.js.map",
     "488.911c1cb5.chunk.js.map": "/solid-core-forge/static/js/488.911c1cb5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77c129da.css",
-    "static/js/main.384ce43c.js"
+    "static/css/main.97054144.css",
+    "static/js/main.544ad9fa.js"
   ]
 }
