@@ -7,6 +7,8 @@
     background-position: center;
     padding: 0;
     align-items: center;
+    background-color: black;
+    position: relative;
     /* horizontally center text */
 }
 
@@ -28,4 +30,6 @@
     align-items: center;
     /* vertically center in remaining space */
     width: 100%;
+    position: relative;
+    z-index: 1;
 }

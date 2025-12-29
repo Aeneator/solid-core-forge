@@ -2,7 +2,7 @@
 .modelsPage {
     background-color: var(--color-background);
     min-height: 100vh;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .modelsContent {

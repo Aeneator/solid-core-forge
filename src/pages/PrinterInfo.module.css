@@ -1,4 +1,10 @@
 /* PrinterInfo.module.css */
+.mainContainer {
+    background-color: var(--color-background);
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

@@ -13,7 +13,7 @@
   text-align: center;
   color: var(--color-text-white);
   position: relative;
-  ;
+
 }
 
 /* Optional overlay */
@@ -29,7 +29,7 @@
 }
 
 .homeContent {
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 
@@ -45,4 +45,12 @@
 
 .spacer {
   height: 500px;
+}
+
+.largeText {
+  font-size: clamp(2rem, 8vw, 8rem);
+}
+
+.mediumText {
+  font-size: clamp(1.5rem, 4vw, 4rem);
 }

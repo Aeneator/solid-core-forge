@@ -7,6 +7,10 @@ import caesar from '../assets/models/caesar.glb';
 import caesarThumbnail from '../assets/models/caesar.jpg';
 import whaleShark from '../assets/models/ArticulatedWhaleShark.glb';
 import whaleSharkThumbnail from '../assets/models/caesar.jpg';
+import happypot from '../assets/models/happy-pot.glb';
+import happypotThumbnail from '../assets/models/happy-pot.jpg';
+import low_poly_shark from '../assets/models/low_poly_shark.glb';
+import low_poly_shark_thumbnail from '../assets/models/caesar.jpg';
 
 const exampleModels = [
     {
@@ -27,6 +31,25 @@ const exampleModels = [
         cameraOrbit: "45deg 55deg 4m",
         cameraTarget: "0m 0.5m 0m",
     },
+    {
+        id: 3,
+        name: "Happy Pot",
+        modelUrl: happypot,
+        thumbnail: happypotThumbnail,
+        backgroundColor: "#ffffffff",
+        cameraOrbit: "45deg 55deg 4m",
+        cameraTarget: "0m 0.5m 0m",
+    }
+    ,
+    {
+        id: 4,
+        name: "Low Poly Shark",
+        modelUrl: low_poly_shark,
+        thumbnail: low_poly_shark_thumbnail,
+        backgroundColor: "#ffffffff",
+        cameraOrbit: "45deg 55deg 4m",
+        cameraTarget: "0m 0.5m 0m",
+    }
 ];
 
 export default function Models() {
@@ -84,19 +107,14 @@ export default function Models() {
                                 alt={selectedModel.name}
                                 camera-controls
                                 auto-rotate={true}
-                                // camera-orbit={selectedModel.cameraOrbit}
-                                // camera-target={selectedModel.cameraTarget}
                                 shadow-intensity="1"
-                                rimLightIntensity="0.5"
-                                environment-presets="night"
-                                exposure=".15"
+                                exposure={0.15}
                                 style={{
                                     width: '100%',
                                     height: '70vh',
                                     backgroundColor: selectedModel.backgroundColor,
                                 }}
-                            >
-                            </model-viewer>
+                            />
 
                             <div className={styles.viewerInstructions}>
                                 <div className={styles.instructionItem}>
@@ -141,11 +159,6 @@ export default function Models() {
                                         <div className={styles.thumbnailOverlay}>
                                             <span className={styles.view3D}>3D View</span>
                                         </div>
-                                        {model.painted && (
-                                            <div className={styles.paintedBadge}>
-                                                🎨 Painted
-                                            </div>
-                                        )}
                                     </div>
                                 </div>
                                 <div className={styles.modelCardContent}>

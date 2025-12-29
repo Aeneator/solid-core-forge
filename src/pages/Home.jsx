@@ -1,19 +1,49 @@
+import { useRef } from 'react';
 import styles from './Home.module.css';
-import backgroundImage from '../assets/home-background.jpg';
-import Testimonials from '../components/Testimonials';
+import LiquidEther from '../react-bits/LiquidEther';
+import FloatingLines from '../react-bits/FloatingLines';
+import LiquidChrome from '../react-bits/LiquidChrome';
+import VariableProximity from '../react-bits/VariableProximity';
+
 
 export default function Home() {
+  const containerRef = useRef(null);
   return (
     <div>
       <div
         className={styles.homePage}
-        style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className={styles.homeContent}>
-          <h1>Bring your ideas to life</h1>
-          <p>Create anything</p>
-        </div>
+        <LiquidChrome
+          baseColor={[0.1, 0.1, 0.1]}
+          speed={.1}
+          amplitude={0.6}
+          interactive={true}
+        />
 
+        <div className={styles.homeContent} ref={containerRef}>
+          {/* <h1>Bring your ideas to life</h1> */}
+          <VariableProximity
+            label={'Bring your ideas to life'}
+            className={`variable-proximity-demo ${styles.largeText}`}
+            fromFontVariationSettings="'wght' 400, 'opsz' 9"
+            toFontVariationSettings="'wght' 1000, 'opsz' 40"
+            containerRef={containerRef}
+            radius={100}
+            falloff='linear'
+          />
+          <br />
+          <VariableProximity
+            label={'Create anything'}
+            className={`variable-proximity-demo ${styles.mediumText}`}
+            fromFontVariationSettings="'wght' 400, 'opsz' 9"
+            toFontVariationSettings="'wght' 1000, 'opsz' 40"
+            containerRef={containerRef}
+            radius={100}
+            falloff='linear'
+          />
+
+        </div>
+        {/* </FloatingLines> */}
       </div>
 
       <div className={styles.spacer}></div>
