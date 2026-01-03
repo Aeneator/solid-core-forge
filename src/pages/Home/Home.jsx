@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import styles from './Home.module.css';
-import LiquidChrome from '../react-bits/LiquidChrome';
-import VariableProximity from '../react-bits/VariableProximity';
+import LiquidChrome from '../../react-bits/LiquidChrome';
+import VariableProximity from '../../react-bits/VariableProximity';
 
 
 export default function Home() {
