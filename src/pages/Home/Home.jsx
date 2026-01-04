@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import styles from './Home.module.css';
 import LiquidChrome from '../../react-bits/LiquidChrome';
 import VariableProximity from '../../react-bits/VariableProximity';
+import HomeGallery from './HomeGallery';
 
 
 export default function Home() {
@@ -42,6 +43,8 @@ export default function Home() {
 
         </div>
       </div>
+
+      <HomeGallery />
 
       <div className={styles.spacer}></div>
     </div>
