@@ -342,53 +342,199 @@
     line-height: 1.5;
 }
 
-/* Dark Mode Styles */
-[data-theme="dark"] .viewerContainer,
-[data-theme="dark"] .modelCard,
-[data-theme="dark"] .featureCard {
-    background-color: #2a2a2a;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+/* License Badge */
+.licenseBadge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin-left: 12px;
+    transition: opacity 0.2s;
+    user-select: none;
 }
 
-[data-theme="dark"] .viewerHeader {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-bottom-color: rgba(255, 255, 255, 0.1);
+.licenseBadge:hover {
+    opacity: 0.9;
 }
 
-[data-theme="dark"] .modelTitle h3,
-[data-theme="dark"] .modelCardContent h4,
-[data-theme="dark"] .featureCard h4 {
-    color: #f0f0f0;
+/* Attribution Panel */
+.attributionPanel {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    animation: slideDown 0.3s ease;
 }
 
-[data-theme="dark"] .introSection p,
-[data-theme="dark"] .modelInfo p,
-[data-theme="dark"] .modelDescription,
-[data-theme="dark"] .featureCard p {
-    color: #e0e0e0;
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-[data-theme="dark"] .infoSection li {
-    color: #e0e0e0;
+.attributionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
-[data-theme="dark"] .controlBtn {
-    background-color: #333;
-    border-color: #444;
-    color: #f0f0f0;
+.attributionHeader h4 {
+    margin: 0;
+    color: #2c3e50;
 }
 
-[data-theme="dark"] .controlBtn:hover {
-    background-color: #444;
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #6c757d;
+    padding: 0 8px;
 }
 
-[data-theme="dark"] .viewerInstructions {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-top-color: rgba(255, 255, 255, 0.1);
+.closeBtn:hover {
+    color: #343a40;
 }
 
-[data-theme="dark"] .instructionItem {
-    color: #e0e0e0;
+.attributionContent {
+    line-height: 1.6;
+}
+
+.attributionContent p {
+    margin: 8px 0;
+}
+
+.sourceLink {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sourceLink:hover {
+    text-decoration: underline;
+}
+
+.licenseNote {
+    color: #d35400;
+    background-color: #fff8e1;
+    padding: 8px;
+    border-radius: 4px;
+    border-left: 3px solid #ffc107;
+}
+
+.attributionCode {
+    margin-top: 16px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 12px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.attributionCode pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+}
+
+.copyBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.copyBtn:hover {
+    background-color: #2980b9;
+}
+
+/* Minimal Attribution Footer */
+.minimalAttribution {
+    margin-top: 16px;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    border-radius: 0 0 8px 8px;
+}
+
+.licenseText {
+    color: #3498db;
+    font-weight: 500;
+}
+
+.note {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+/* Gallery Card Styling */
+.modelMeta {
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+.modelAuthor {
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.modelLicense {
+    color: #3498db;
+    font-weight: 500;
+}
+
+.ncWarning {
+    color: #e74c3c;
+    cursor: help;
+}
+
+.licenseIndicator {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    backdrop-filter: blur(4px);
+    background-color: rgba(52, 152, 219, 0.9);
+}
+
+/* Control Button Updates */
+.controlBtn {
+    margin-left: 8px;
+    padding: 6px 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.controlBtn:hover {
+    background-color: #e9ecef;
 }
 
 /* Responsive Design */
