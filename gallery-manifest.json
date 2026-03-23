@@ -1,5 +1,57 @@
 [
   {
+    "title": "Assortment of models",
+    "images": [
+      {
+        "src": "/HomeGallery/Assortment of models/Things1.jpg",
+        "alt": "Assortment of models 1"
+      },
+      {
+        "src": "/HomeGallery/Assortment of models/Things2.jpg",
+        "alt": "Assortment of models 2"
+      }
+    ]
+  },
+  {
+    "title": "Custom Funko Pop",
+    "images": [
+      {
+        "src": "/HomeGallery/Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.06.jpeg",
+        "alt": "Custom Funko Pop 1"
+      },
+      {
+        "src": "/HomeGallery/Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.07 side.jpeg",
+        "alt": "Custom Funko Pop 2"
+      },
+      {
+        "src": "/HomeGallery/Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.07.jpeg",
+        "alt": "Custom Funko Pop 3"
+      },
+      {
+        "src": "/HomeGallery/Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.08.jpeg",
+        "alt": "Custom Funko Pop 4"
+      }
+    ]
+  },
+  {
+    "title": "Decoration",
+    "images": [
+      {
+        "src": "/HomeGallery/Decoration/Decoration1.jpg",
+        "alt": "Decoration 1"
+      }
+    ]
+  },
+  {
+    "title": "Famous Psychologists",
+    "images": [
+      {
+        "src": "/HomeGallery/Famous Psychologists/WhatsApp Image 2026-03-24 at 00.38.05.jpeg",
+        "alt": "Famous Psychologists 1"
+      }
+    ]
+  },
+  {
     "title": "Hornet - Hollow Knight",
     "images": [
       {
@@ -46,6 +98,45 @@
     ]
   },
   {
+    "title": "Miniature Car Support (Cars not included)",
+    "images": [
+      {
+        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 2.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 1"
+      },
+      {
+        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 3.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 2"
+      },
+      {
+        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 4.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 3"
+      },
+      {
+        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 4"
+      }
+    ]
+  },
+  {
+    "title": "Nero - Black Clover",
+    "images": [
+      {
+        "src": "/HomeGallery/Nero - Black Clover/Nero1.jpg",
+        "alt": "Nero - Black Clover 1"
+      }
+    ]
+  },
+  {
+    "title": "No face - Spirited Away",
+    "images": [
+      {
+        "src": "/HomeGallery/No face - Spirited Away/WhatsApp Image 2026-03-24 at 00.38.05.jpeg",
+        "alt": "No face - Spirited Away 1"
+      }
+    ]
+  },
+  {
     "title": "The Knight - Hollow Knight",
     "images": [
       {
@@ -55,6 +146,33 @@
       {
         "src": "/HomeGallery/The Knight - Hollow Knight/Knight2.jpg",
         "alt": "The Knight - Hollow Knight 2"
+      }
+    ]
+  },
+  {
+    "title": "Trueno 86",
+    "images": [
+      {
+        "src": "/HomeGallery/Trueno 86/Trueno1.jpg",
+        "alt": "Trueno 86 1"
+      }
+    ]
+  },
+  {
+    "title": "Tux",
+    "images": [
+      {
+        "src": "/HomeGallery/Tux/Tux1.jpg",
+        "alt": "Tux 1"
+      }
+    ]
+  },
+  {
+    "title": "Villager - Minecraft",
+    "images": [
+      {
+        "src": "/HomeGallery/Villager - Minecraft/Villager1.jpg",
+        "alt": "Villager - Minecraft 1"
       }
     ]
   }
