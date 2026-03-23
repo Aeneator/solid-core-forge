@@ -23,7 +23,10 @@
     "web-vitals": "^5.1.0"
   },
   "scripts": {
+    "generate-gallery": "node scripts/generateGalleryManifest.js",
+    "prestart": "npm run generate-gallery",
     "start": "react-scripts start",
+    "prebuild": "npm run generate-gallery",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

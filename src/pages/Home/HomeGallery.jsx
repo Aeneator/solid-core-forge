@@ -1,81 +1,54 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './HomeGallery.module.css';
 import CircularGallery from '../../react-bits/CircularGallery';
 
 export default function HomeGallery() {
     const [selectedImage, setSelectedImage] = useState(null);
+    const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
     const basePath = process.env.PUBLIC_URL || '';
 
-    // Replace with your actual project data
-    const projects = [
-        {
-            title: "Hornet - Hollow Knight",
-            images: [
-                { src: `${basePath}/HomeGallery/Hornet1.jpg`, alt: "Hornet 1" },
-                { src: `${basePath}/HomeGallery/Hornet2.jpg`, alt: "Hornet 2" },
-                { src: `${basePath}/HomeGallery/Hornet3.jpg`, alt: "Hornet 3" },
-                { src: `${basePath}/HomeGallery/Hornet4.jpg`, alt: "Hornet 4" }
-            ]
-        },
-        {
-            title: "Mercenary - Risk Of Rain 2",
-            images: [
-                { src: `${basePath}/HomeGallery/Mercenary1.jpg`, alt: "Mercenary 1" },
-                { src: `${basePath}/HomeGallery/Mercenary2.jpg`, alt: "Mercenary 2" },
-                { src: `${basePath}/HomeGallery/Mercenary3.jpg`, alt: "Mercenary 3" },
-                { src: `${basePath}/HomeGallery/Mercenary4.jpg`, alt: "Mercenary 4" },
-                { src: `${basePath}/HomeGallery/Mercenary5.jpg`, alt: "Mercenary 5" }
-            ]
-        },
-        {
-            title: "Trueno ae86",
-            images: [
-                { src: `${basePath}/HomeGallery/Trueno1.jpg`, alt: "Trueno 1" },
-            ]
-        },
-        {
-            title: "Tux",
-            images: [
-                { src: `${basePath}/HomeGallery/Tux1.jpg`, alt: "Tux 1" },
-            ]
-        },
-        {
-            title: "Decoration",
-            images: [
-                { src: `${basePath}/HomeGallery/Decoration1.jpg`, alt: "Decoration 1" },
-            ]
-        },
-        {
-            title: "Nero - Black Clover",
-            images: [
-                { src: `${basePath}/HomeGallery/Nero1.jpg`, alt: "Nero 1" },
-            ]
-        }, {
-            title: "The Knight - Hollow Knight",
-            images: [
-                { src: `${basePath}/HomeGallery/Knight1.jpg`, alt: "The Knight 1" },
-                { src: `${basePath}/HomeGallery/Knight2.jpg`, alt: "The Knight 2" }
-            ]
-        },
-        {
-            title: "Villager - Minecraft",
-            images: [
-                { src: `${basePath}/HomeGallery/Villager1.jpg`, alt: "Villager 1" },
-            ]
-        },
-        {
-            title: "Assorted Models",
-            images: [
-                { src: `${basePath}/HomeGallery/Things1.jpg`, alt: "Assorted 1" },
-                { src: `${basePath}/HomeGallery/Things2.jpg`, alt: "Assorted 2" },
-            ]
-        }
-    ];
+    // Load projects from generated manifest
+    useEffect(() => {
+        const loadProjects = async () => {
+            try {
+                const response = await fetch(`${basePath}/gallery-manifest.json`);
+                if (!response.ok) {
+                    throw new Error('Failed to load gallery manifest');
+                }
+                const data = await response.json();
+                // Add basePath to image sources
+                const projectsWithPaths = data.map(project => ({
+                    ...project,
+                    images: project.images.map(image => ({
+                        ...image,
+                        src: `${basePath}${image.src}`
+                    }))
+                }));
+                setProjects(projectsWithPaths);
+            } catch (error) {
+                console.error('Error loading gallery projects:', error);
+                setProjects([]);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        loadProjects();
+    }, [basePath]);
 
     const circularGalleryItems = projects.map(project => ({
         image: project.images[0].src,  // Get first image
         text: project.title            // Use project title as text
     }));
+
+    if (loading) {
+        return <div className={styles.container}><p>Loading gallery...</p></div>;
+    }
+
+    if (projects.length === 0) {
+        return <div className={styles.container}><p>No projects found</p></div>;
+    }
 
     return (
         <div className={styles.container}>
