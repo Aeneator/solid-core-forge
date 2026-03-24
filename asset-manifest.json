@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/solid-core-forge/static/css/main.01e427cb.css",
+    "main.css": "/solid-core-forge/static/css/main.ef772f90.css",
     "main.js": "/solid-core-forge/static/js/main.dea1aee4.js",
     "static/js/488.911c1cb5.chunk.js": "/solid-core-forge/static/js/488.911c1cb5.chunk.js",
     "static/media/MeNYou.glb": "/solid-core-forge/static/media/MeNYou.c727b81abe5a26ca40f3.glb",
@@ -20,12 +20,12 @@
     "static/media/ArticulatedWhaleShark.jpg": "/solid-core-forge/static/media/ArticulatedWhaleShark.e4ed0349e5085646876b.jpg",
     "static/media/low-poly-shark.jpg": "/solid-core-forge/static/media/low-poly-shark.6891e12cddcb2b72ab98.jpg",
     "index.html": "/solid-core-forge/index.html",
-    "main.01e427cb.css.map": "/solid-core-forge/static/css/main.01e427cb.css.map",
+    "main.ef772f90.css.map": "/solid-core-forge/static/css/main.ef772f90.css.map",
     "main.dea1aee4.js.map": "/solid-core-forge/static/js/main.dea1aee4.js.map",
     "488.911c1cb5.chunk.js.map": "/solid-core-forge/static/js/488.911c1cb5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01e427cb.css",
+    "static/css/main.ef772f90.css",
     "static/js/main.dea1aee4.js"
   ]
 }
