@@ -1,5 +1,51 @@
 [
   {
+    "title": "Mercenary - Risk of Rain 2",
+    "images": [
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary1.jpg",
+        "alt": "Mercenary - Risk of Rain 2 1"
+      },
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary2.jpg",
+        "alt": "Mercenary - Risk of Rain 2 2"
+      },
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary3.jpg",
+        "alt": "Mercenary - Risk of Rain 2 3"
+      },
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary4.jpg",
+        "alt": "Mercenary - Risk of Rain 2 4"
+      },
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary5.jpg",
+        "alt": "Mercenary - Risk of Rain 2 5"
+      }
+    ]
+  },
+  {
+    "title": "Miniature Car Support (Cars not included)",
+    "images": [
+      {
+        "src": "/HomeGallery/[2]Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 2.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 1"
+      },
+      {
+        "src": "/HomeGallery/[2]Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 3.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 2"
+      },
+      {
+        "src": "/HomeGallery/[2]Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 4.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 3"
+      },
+      {
+        "src": "/HomeGallery/[2]Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 4"
+      }
+    ]
+  },
+  {
     "title": "Assortment of models",
     "images": [
       {
@@ -43,15 +89,6 @@
     ]
   },
   {
-    "title": "Famous Psychologists",
-    "images": [
-      {
-        "src": "/HomeGallery/Famous Psychologists/WhatsApp Image 2026-03-24 at 00.38.05.jpeg",
-        "alt": "Famous Psychologists 1"
-      }
-    ]
-  },
-  {
     "title": "Hornet - Hollow Knight",
     "images": [
       {
@@ -73,52 +110,6 @@
     ]
   },
   {
-    "title": "Mercenary - Risk of Rain 2",
-    "images": [
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary1.jpg",
-        "alt": "Mercenary - Risk of Rain 2 1"
-      },
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary2.jpg",
-        "alt": "Mercenary - Risk of Rain 2 2"
-      },
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary3.jpg",
-        "alt": "Mercenary - Risk of Rain 2 3"
-      },
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary4.jpg",
-        "alt": "Mercenary - Risk of Rain 2 4"
-      },
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary5.jpg",
-        "alt": "Mercenary - Risk of Rain 2 5"
-      }
-    ]
-  },
-  {
-    "title": "Miniature Car Support (Cars not included)",
-    "images": [
-      {
-        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 2.jpeg",
-        "alt": "Miniature Car Support (Cars not included) 1"
-      },
-      {
-        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 3.jpeg",
-        "alt": "Miniature Car Support (Cars not included) 2"
-      },
-      {
-        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 4.jpeg",
-        "alt": "Miniature Car Support (Cars not included) 3"
-      },
-      {
-        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04.jpeg",
-        "alt": "Miniature Car Support (Cars not included) 4"
-      }
-    ]
-  },
-  {
     "title": "Nero - Black Clover",
     "images": [
       {
@@ -133,6 +124,15 @@
       {
         "src": "/HomeGallery/No face - Spirited Away/WhatsApp Image 2026-03-24 at 00.38.05.jpeg",
         "alt": "No face - Spirited Away 1"
+      }
+    ]
+  },
+  {
+    "title": "Sigmund Freud and Jacques Lacan",
+    "images": [
+      {
+        "src": "/HomeGallery/Sigmund Freud and Jacques Lacan/WhatsApp Image 2026-03-24 at 00.38.05.jpeg",
+        "alt": "Sigmund Freud and Jacques Lacan 1"
       }
     ]
   },
