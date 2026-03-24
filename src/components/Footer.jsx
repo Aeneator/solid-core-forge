@@ -3,6 +3,8 @@ import styles from './Footer.module.css';
 import logo from '../assets/solid-core-forge-logo.png'; // your logo image
 
 export default function Footer() {
+    const currentYear = new Date().getFullYear();
+
     // Use an international format for the phone URI
     const phoneNumberDisplay = "0761 087 255";
     const phoneNumberTel = "+40761087255"; // no spaces, international format
@@ -26,7 +28,7 @@ export default function Footer() {
             {/* Bottom row */}
             <div className={styles.bottomRow}>
                 <div className={styles.left}>
-                    <p>2025 All Rights Reserved</p>
+                    <p>{currentYear} All Rights Reserved</p>
                 </div>
 
                 <div className={styles.center}>
