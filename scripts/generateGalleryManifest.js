@@ -7,6 +7,10 @@ const OUTPUT_FILE = path.join(__dirname, '../public/gallery-manifest.json');
 // Common image extensions
 const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 
+function getDisplayName(folderName) {
+    return folderName.replace(/^\[\d+\]\s*/, '').trim();
+}
+
 function generateManifest() {
     try {
         if (!fs.existsSync(GALLERY_DIR)) {
@@ -15,11 +19,12 @@ function generateManifest() {
         }
 
         const projects = [];
-        const folders = fs.readdirSync(GALLERY_DIR);
+        const folders = fs.readdirSync(GALLERY_DIR).sort((a, b) => a.localeCompare(b));
 
         folders.forEach((folder) => {
             const folderPath = path.join(GALLERY_DIR, folder);
             const stat = fs.statSync(folderPath);
+            const displayName = getDisplayName(folder);
 
             // Only process directories
             if (!stat.isDirectory()) return;
@@ -30,13 +35,13 @@ function generateManifest() {
                 .sort() // Sort alphabetically
                 .map((file, index) => ({
                     src: `/HomeGallery/${folder}/${file}`,
-                    alt: `${folder} ${index + 1}`
+                    alt: `${displayName} ${index + 1}`
                 }));
 
             // Only add if there are images
             if (images.length > 0) {
                 projects.push({
-                    title: folder,
+                    title: displayName,
                     images: images
                 });
             }

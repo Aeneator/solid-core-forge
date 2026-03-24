@@ -1,5 +1,124 @@
 [
   {
+    "title": "Hornet - Hollow Knight",
+    "images": [
+      {
+        "src": "/HomeGallery/[1]Hornet - Hollow Knight/Hornet1.jpg",
+        "alt": "Hornet - Hollow Knight 1"
+      },
+      {
+        "src": "/HomeGallery/[1]Hornet - Hollow Knight/Hornet2.jpg",
+        "alt": "Hornet - Hollow Knight 2"
+      },
+      {
+        "src": "/HomeGallery/[1]Hornet - Hollow Knight/Hornet3.jpg",
+        "alt": "Hornet - Hollow Knight 3"
+      },
+      {
+        "src": "/HomeGallery/[1]Hornet - Hollow Knight/Hornet4.jpg",
+        "alt": "Hornet - Hollow Knight 4"
+      }
+    ]
+  },
+  {
+    "title": "Mercenary - Risk of Rain 2",
+    "images": [
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary1.jpg",
+        "alt": "Mercenary - Risk of Rain 2 1"
+      },
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary2.jpg",
+        "alt": "Mercenary - Risk of Rain 2 2"
+      },
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary3.jpg",
+        "alt": "Mercenary - Risk of Rain 2 3"
+      },
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary4.jpg",
+        "alt": "Mercenary - Risk of Rain 2 4"
+      },
+      {
+        "src": "/HomeGallery/[1]Mercenary - Risk of Rain 2/Mercenary5.jpg",
+        "alt": "Mercenary - Risk of Rain 2 5"
+      }
+    ]
+  },
+  {
+    "title": "Miniature Car Support (Cars not included)",
+    "images": [
+      {
+        "src": "/HomeGallery/[2]Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 2.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 1"
+      },
+      {
+        "src": "/HomeGallery/[2]Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 3.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 2"
+      },
+      {
+        "src": "/HomeGallery/[2]Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 4.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 3"
+      },
+      {
+        "src": "/HomeGallery/[2]Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04.jpeg",
+        "alt": "Miniature Car Support (Cars not included) 4"
+      }
+    ]
+  },
+  {
+    "title": "No face - Spirited Away",
+    "images": [
+      {
+        "src": "/HomeGallery/[3]No face - Spirited Away/WhatsApp Image 2026-03-24 at 00.38.05.jpeg",
+        "alt": "No face - Spirited Away 1"
+      }
+    ]
+  },
+  {
+    "title": "The Knight - Hollow Knight",
+    "images": [
+      {
+        "src": "/HomeGallery/[4]The Knight - Hollow Knight/Knight1.jpg",
+        "alt": "The Knight - Hollow Knight 1"
+      },
+      {
+        "src": "/HomeGallery/[4]The Knight - Hollow Knight/Knight2.jpg",
+        "alt": "The Knight - Hollow Knight 2"
+      }
+    ]
+  },
+  {
+    "title": "Custom Funko Pop",
+    "images": [
+      {
+        "src": "/HomeGallery/[5]Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.06.jpeg",
+        "alt": "Custom Funko Pop 1"
+      },
+      {
+        "src": "/HomeGallery/[5]Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.07 side.jpeg",
+        "alt": "Custom Funko Pop 2"
+      },
+      {
+        "src": "/HomeGallery/[5]Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.07.jpeg",
+        "alt": "Custom Funko Pop 3"
+      },
+      {
+        "src": "/HomeGallery/[5]Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.08.jpeg",
+        "alt": "Custom Funko Pop 4"
+      }
+    ]
+  },
+  {
+    "title": "Nero - Black Clover",
+    "images": [
+      {
+        "src": "/HomeGallery/[6]Nero - Black Clover/Nero1.jpg",
+        "alt": "Nero - Black Clover 1"
+      }
+    ]
+  },
+  {
     "title": "Assortment of models",
     "images": [
       {
@@ -13,27 +132,6 @@
     ]
   },
   {
-    "title": "Custom Funko Pop",
-    "images": [
-      {
-        "src": "/HomeGallery/Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.06.jpeg",
-        "alt": "Custom Funko Pop 1"
-      },
-      {
-        "src": "/HomeGallery/Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.07 side.jpeg",
-        "alt": "Custom Funko Pop 2"
-      },
-      {
-        "src": "/HomeGallery/Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.07.jpeg",
-        "alt": "Custom Funko Pop 3"
-      },
-      {
-        "src": "/HomeGallery/Custom Funko Pop/WhatsApp Image 2026-03-24 at 00.38.08.jpeg",
-        "alt": "Custom Funko Pop 4"
-      }
-    ]
-  },
-  {
     "title": "Decoration",
     "images": [
       {
@@ -43,109 +141,11 @@
     ]
   },
   {
-    "title": "Famous Psychologists",
+    "title": "Sigmund Freud and Jacques Lacan",
     "images": [
       {
-        "src": "/HomeGallery/Famous Psychologists/WhatsApp Image 2026-03-24 at 00.38.05.jpeg",
-        "alt": "Famous Psychologists 1"
-      }
-    ]
-  },
-  {
-    "title": "Hornet - Hollow Knight",
-    "images": [
-      {
-        "src": "/HomeGallery/Hornet - Hollow Knight/Hornet1.jpg",
-        "alt": "Hornet - Hollow Knight 1"
-      },
-      {
-        "src": "/HomeGallery/Hornet - Hollow Knight/Hornet2.jpg",
-        "alt": "Hornet - Hollow Knight 2"
-      },
-      {
-        "src": "/HomeGallery/Hornet - Hollow Knight/Hornet3.jpg",
-        "alt": "Hornet - Hollow Knight 3"
-      },
-      {
-        "src": "/HomeGallery/Hornet - Hollow Knight/Hornet4.jpg",
-        "alt": "Hornet - Hollow Knight 4"
-      }
-    ]
-  },
-  {
-    "title": "Mercenary - Risk of Rain 2",
-    "images": [
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary1.jpg",
-        "alt": "Mercenary - Risk of Rain 2 1"
-      },
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary2.jpg",
-        "alt": "Mercenary - Risk of Rain 2 2"
-      },
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary3.jpg",
-        "alt": "Mercenary - Risk of Rain 2 3"
-      },
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary4.jpg",
-        "alt": "Mercenary - Risk of Rain 2 4"
-      },
-      {
-        "src": "/HomeGallery/Mercenary - Risk of Rain 2/Mercenary5.jpg",
-        "alt": "Mercenary - Risk of Rain 2 5"
-      }
-    ]
-  },
-  {
-    "title": "Miniature Car Support (Cars not included)",
-    "images": [
-      {
-        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 2.jpeg",
-        "alt": "Miniature Car Support (Cars not included) 1"
-      },
-      {
-        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 3.jpeg",
-        "alt": "Miniature Car Support (Cars not included) 2"
-      },
-      {
-        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04 4.jpeg",
-        "alt": "Miniature Car Support (Cars not included) 3"
-      },
-      {
-        "src": "/HomeGallery/Miniature Car Support (Cars not included)/WhatsApp Image 2026-03-24 at 00.43.04.jpeg",
-        "alt": "Miniature Car Support (Cars not included) 4"
-      }
-    ]
-  },
-  {
-    "title": "Nero - Black Clover",
-    "images": [
-      {
-        "src": "/HomeGallery/Nero - Black Clover/Nero1.jpg",
-        "alt": "Nero - Black Clover 1"
-      }
-    ]
-  },
-  {
-    "title": "No face - Spirited Away",
-    "images": [
-      {
-        "src": "/HomeGallery/No face - Spirited Away/WhatsApp Image 2026-03-24 at 00.38.05.jpeg",
-        "alt": "No face - Spirited Away 1"
-      }
-    ]
-  },
-  {
-    "title": "The Knight - Hollow Knight",
-    "images": [
-      {
-        "src": "/HomeGallery/The Knight - Hollow Knight/Knight1.jpg",
-        "alt": "The Knight - Hollow Knight 1"
-      },
-      {
-        "src": "/HomeGallery/The Knight - Hollow Knight/Knight2.jpg",
-        "alt": "The Knight - Hollow Knight 2"
+        "src": "/HomeGallery/Sigmund Freud and Jacques Lacan/WhatsApp Image 2026-03-24 at 00.38.05.jpeg",
+        "alt": "Sigmund Freud and Jacques Lacan 1"
       }
     ]
   },

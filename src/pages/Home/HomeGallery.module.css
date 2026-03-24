@@ -39,14 +39,16 @@
 }
 
 .imageGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
 }
 
 .imageCard {
+    width: 350px;
+    height: 380px;
     position: relative;
-    padding-bottom: 100%;
     background: var(--color-card);
     border-radius: 8px;
     overflow: hidden;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './HomeGallery.module.css';
-import CircularGallery from '../../react-bits/CircularGallery';
+import InfiniteConveyor from '../../components/InfiniteConveyor';
 
 export default function HomeGallery() {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -37,7 +37,7 @@ export default function HomeGallery() {
         loadProjects();
     }, [basePath]);
 
-    const circularGalleryItems = projects.map(project => ({
+    const conveyorItems = projects.map(project => ({
         image: project.images[0].src,  // Get first image
         text: project.title            // Use project title as text
     }));
@@ -53,18 +53,16 @@ export default function HomeGallery() {
     return (
         <div className={styles.container}>
             <div className={styles.circularGallerySection}>
-                <h2 className={styles.projectTitle}>Featured Artwork</h2>
-                <div style={{ height: '600px' }}>
-                    <CircularGallery
-                        items={circularGalleryItems}
-                        bend={3}
-                        textColor="#000000ff"
-                        borderRadius={0.05}
-                        // font="bold 30px Figtree"
-                        scrollSpeed={2}
-                        scrollEase={0.05}
-                    />
-                </div>
+                <h2 className={styles.projectTitle}>Featured Projects</h2>
+                <InfiniteConveyor
+                    items={conveyorItems}
+                    speedSeconds={70}
+                    itemWidth={340}
+                    itemHeight={420}
+                    direction="left"
+                />
+
+
             </div>
 
             <div className={styles.content}>
